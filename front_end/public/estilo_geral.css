@@ -9,38 +9,56 @@
 
 body{
     font-family:'Cormorant Garamond', 'Garamond', 'EB Garamond', 'Georgia', serif;
+
+    background: black url("../assents/imagens/imagens-desktop/background-universo-roxo-desktop.png") no-repeat fixed center center;
+    background-size: cover;
 }
 
 header {
     display: flex;
     align-items: center;
     padding: 10px;
+
+    background: radial-gradient(closest-side,#7D3686,#662C6E,#502356, #512357);
+
 }
 
 .logo_site_header {
-    display: block; /* ou flex */
+    display: block; 
 }
 
 .menu_header {
     display: flex;
-    flex-grow: 1; /* Faz o menu ocupar o máximo de espaço possível */
-    justify-content: space-between; /* Garante que os itens fiquem separados */
+    flex-grow: 1; 
+    justify-content: space-between; 
     align-items: center;
 }
 
 .menu_header a {
     margin-left: 1em;
+    padding-top: 0.5em;
+
+    border-radius: 10%;
+
+    width: 5em;
+    height: 2em;
+
+    background-color: #A12AB1;
+
+    text-decoration: none;
+    text-align: center;
+    color: white;
 }
 
 .home_menu {
     display: flex;
-    gap: 1em; /* Dá espaço entre os links */
+    gap: 1em; 
 }
 
 .btn_conta {
-    margin-left: auto; /* Isso faz com que ele vá para a direita */
+    margin-left: auto; 
     display: flex;
-    gap: 1em; /* Dá espaço entre Cadastro e Login */
+    gap: 1em;
 }
 
 

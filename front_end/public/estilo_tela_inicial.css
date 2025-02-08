@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+main{
+    width: 80%;
+    height: 1100px;
+
+    margin: auto;
+
+
+    background: black url("../assents/imagens/imagens-desktop/background-pergam-desktop.png") no-repeat fixed center center;
+    background-size: cover;
+}
+
+#bem_vindo_psi_imagem{
+    text-align: center;
+}
