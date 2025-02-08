@@ -6,8 +6,8 @@ main{
 
     margin: auto;
 
-    background: black url("../assents/imagens/imagens-desktop/background-pergam-desktop.png") no-repeat  top right;
-    background-size: 100%;
+    background: black url("../assents/imagens/imagens-desktop/background-pergam-desktop.png") no-repeat center center;
+    background-size: 100% 100%;
 }
 
 #bem_vindo_psi_imagem{
@@ -37,7 +37,7 @@ main article{
     width: 100%;
     height: 20%;
 
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 
     margin-left: 0%;
 
@@ -89,6 +89,22 @@ main a{
 #btn_esquerda{
     margin-right: 100%; 
     
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+    main{
+        background: black url("../assents/imagens/imagens-tablet/background-pergam-tablet.png") no-repeat center center ; 
+        background-size: 100% 100%;
+    }
+
+    #bem_vindo_ao_psi_responsivo{
+        content: url("../assents/imagens/imagens-tablet/bem_vindo_ao_psi_tablet.png");
+    }
+
+    main p{
+        font-size: 1em;
+    }
 }
 
 
