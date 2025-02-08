@@ -6,18 +6,18 @@ main{
 
     margin: auto;
 
-
     background: black url("../assents/imagens/imagens-desktop/background-pergam-desktop.png") no-repeat  top right;
     background-size: 100%;
-
-  
-    
 }
 
 #bem_vindo_psi_imagem{
     padding-top: 6em;
 
     text-align: center;
+}
+
+main figure{
+    border-radius: 30%;
 }
 
 main article{
@@ -41,6 +41,8 @@ main article{
 
     margin-left: 0%;
 
+    align-self: center;
+
 }
 
 #segunda_versao_paragr{
@@ -52,11 +54,44 @@ main article{
     width: 40%;
     height: 100%;
 
-    margin: 0em 1em 0em 1em;
+    margin: 0em .5em 0em .5em;
 
     display: flex;
     
 }
+
+ main button{
+   width: 25%;
+   height: 15%;
+   border-radius: 12%;
+
+   background-color: #A12AB1;
+
+   margin-top: 5em;
+   margin-left: auto; 
+
+   display: block;  
+
+   border-color: #A12AB1;
+}
+
+main a{
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+#btn_direita{
+    margin-left: auto; 
+}
+
+#btn_esquerda{
+    margin-right: 100%; 
+    
+}
+
+
 
 
 

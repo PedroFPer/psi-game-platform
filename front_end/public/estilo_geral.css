@@ -14,7 +14,7 @@ body{
     background-size: cover;
 }
 
-header {
+header, footer {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -23,24 +23,29 @@ header {
 
 }
 
+footer{
+    padding: 0px;
+}
+
+
 .logo_site_header {
     display: block; 
 }
 
-.menu_header {
+.menu_header_footer {
     display: flex;
     flex-grow: 1; 
     justify-content: space-between; 
     align-items: center;
 }
 
-.menu_header a {
+.menu_header_footer a {
     margin-left: 1em;
     padding-top: 0.5em;
 
     border-radius: 10%;
 
-    width: 5em;
+    width: 6em;
     height: 2em;
 
     background-color: #A12AB1;
@@ -50,15 +55,16 @@ header {
     color: white;
 }
 
-.home_menu {
+.menu_btn_esquerda {
     display: flex;
     gap: 1em; 
 }
 
-.btn_conta {
+.menu_btn_direita {
     margin-left: auto; 
     display: flex;
     gap: 1em;
+    margin-right: 1%;
 }
 
 
