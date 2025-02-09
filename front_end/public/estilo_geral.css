@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+  }
+  
+
 body{
     font-family:'Cormorant Garamond', 'Garamond', 'EB Garamond', 'Georgia', serif;
 
@@ -112,9 +117,9 @@ footer{
 
     .menu_header_footer a {
         width: 6em;
-        height: 2em;
-    
-        font-size: 0.7em;
+        height: 3em;
+        
+        font-size: .7em;
     }
 }
 
