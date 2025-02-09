@@ -2,32 +2,55 @@
 
 main{
     width: 90%;
-    height: 2460px;
+    height: auto;
 
     margin: auto;
 
+    margin-bottom: 0%;
+
+    overflow: hidden; 
+
     background: black url("../assents/imagens/imagens-desktop/background-pergam-desktop.png") no-repeat center center;
     background-size: 100% 100%;
+
+    justify-content: center;
+    align-items: center;
 }
 
 #bem_vindo_psi_imagem{
-    padding-top: 6em;
+    padding-top: 10%;
 
     text-align: center;
 }
 
 main figure{
-    border-radius: 30%;
+
+    border-radius: 10%;
+    overflow: hidden; 
+
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    
+}
+
+main section{
+    width: 100%;
+    height: 30%; 
+
+    align-items: center;
+    justify-content: center;
 }
 
 main article{
-
     width: 40%;
     height: 100%;
 
     margin: 0% 2% 0% 2%;
 
-    font-size: 1.5em;
+    font-size: 2em;
 
 }
 
@@ -37,7 +60,6 @@ main article{
     width: 100%;
     height: 20%;
 
-    margin-bottom: 8%;
 
     margin-left: 0%;
 
@@ -46,17 +68,19 @@ main article{
 }
 
 #segunda_versao_paragr{
-    margin-left: 12%;
+    margin-left: 5%;
 
 }
 
 .imagem_tela_inici{
-    width: 40%;
-    height: 100%;
+    width: 50%;
+    height: 30em;
 
     margin: 0em .5em 0em .5em;
 
     display: flex;
+    object-fit: cover;
+    object-fit: contain;
     
 }
 
@@ -91,6 +115,46 @@ main a{
     
 }
 
+#ultimo-paragrafo_tela_inicial{
+    padding-bottom: 15%;    
+}
+
+
+@media (max-width: 768px){
+    main{
+        background: black url("../assents/imagens/imagens-mobile/background-pergam-mobile.png") no-repeat center center ; 
+        background-size: 100% 100%;
+    }
+
+    p {
+        font-size: 0.5em;
+    }
+
+    #bem_vindo_psi_imagem{
+        content: url("../assents/imagens/imagens-mobile/bem_vindo_ao_psi_mobile.png");
+        padding-top: 0%;
+
+        text-align: center;
+    
+    }
+
+    .imagem_tela_inici{
+        height: 20em;   
+    }
+
+    #imagem_tela_inicial_1{
+        content: url("../assents/imagens/imagens-mobile/imagem_tela_inicial_1_mobile.jpg");
+    }
+
+    #imagem_tela_inicial_2{
+        content: url("../assents/imagens/imagens-mobile/imagem_tela_inicial_2_mobile.png");
+    }
+
+    #imagem_tela_inicial_3{
+        content: url("../assents/imagens/imagens-mobile/imagem-tela-inicial-3_mobile.png");
+    }
+}
+
 
 @media screen and (max-width: 992px) and (min-width: 768px){
     main{
@@ -98,13 +162,30 @@ main a{
         background-size: 100% 100%;
     }
 
+    p {
+        font-size: .8em;
+    }
+
     #bem_vindo_ao_psi_responsivo{
         content: url("../assents/imagens/imagens-tablet/bem_vindo_ao_psi_tablet.png");
     }
 
-    main p{
-        font-size: 1em;
+    .imagem_tela_inici{
+        height: 20em;   
     }
+
+    #imagem_tela_inicial_1{
+        content: url("../assents/imagens/imagens-tablet/imagem_tela_inicial_1_tablet.jpg");
+    }
+
+    #imagem_tela_inicial_2{
+        content: url("../assents/imagens/imagens-tablet/imagem_tela_inicial_2_tablet.png");
+    }
+
+    #imagem_tela_inicial_3{
+        content: url("../assents/imagens/imagens-tablet/imagem-tela-inicial-3_tablet.png");
+    }
+
 }
 
 
