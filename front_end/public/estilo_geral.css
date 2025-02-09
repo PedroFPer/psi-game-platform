@@ -116,10 +116,10 @@ footer{
     }
 
     .menu_header_footer a {
-        width: 6em;
+        width: 5em;
         height: 2.5em;
         
-        font-size: .7em;
+        font-size: .60em;
     }
 }
 
