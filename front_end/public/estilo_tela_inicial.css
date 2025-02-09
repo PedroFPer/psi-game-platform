@@ -24,7 +24,7 @@ main{
 }
 
 main figure{
-
+    
     border-radius: 10%;
     overflow: hidden; 
 
@@ -42,6 +42,8 @@ main section{
 
     align-items: center;
     justify-content: center;
+
+    margin-bottom: 5%;
 }
 
 main article{
@@ -73,30 +75,36 @@ main article{
 }
 
 .imagem_tela_inici{
-    width: 50%;
+    width: 40%;
     height: 30em;
 
     margin: 0em .5em 0em .5em;
 
     display: flex;
     object-fit: cover;
-    object-fit: contain;
     
 }
 
  main button{
-   width: 25%;
-   height: 15%;
-   border-radius: 12%;
+   width: 30%;
+   height: 4em;
+   border-radius: 10%;
 
    background-color: #A12AB1;
 
-   margin-top: 5em;
-   margin-left: auto; 
+   margin-top: 2%;
+   margin-left: auto;
 
-   display: block;  
+   display: flex;  
+   align-items: center;
+   justify-content: center;
 
    border-color: #A12AB1;
+}
+
+main nav{
+   width: 100%;
+   height: 50%;
 }
 
 main a{
@@ -104,6 +112,8 @@ main a{
     text-decoration: none;
     text-align: center;
     color: white;
+
+
 }
 
 #btn_direita{
@@ -116,7 +126,11 @@ main a{
 }
 
 #ultimo-paragrafo_tela_inicial{
-    padding-bottom: 15%;    
+    padding-bottom: 20%;      
+}
+
+#ultimo-paragrafo_tela_inicial img{
+    object-position: left;
 }
 
 
@@ -153,6 +167,42 @@ main a{
     #imagem_tela_inicial_3{
         content: url("../assents/imagens/imagens-mobile/imagem-tela-inicial-3_mobile.png");
     }
+
+    main button{
+        width: 33%;
+        height: 2.5em;
+     
+        background-color: #A12AB1;
+     
+        margin-top: 2%;
+        margin-left: auto;
+
+     }
+
+     .paragrafo-tela-inicial nav{
+        font-size: .5em;
+     }
+
+     main section{
+        width: 100%;
+        height: 5%em; 
+    
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem_tela_inici{
+        width: 40%;
+        height: 10em;
+    
+        margin: 0em .5em 0em .5em;
+    
+        display: flex;
+        object-fit: cover;
+        object-fit: contain;
+        
+    }
+
 }
 
 
@@ -185,6 +235,21 @@ main a{
     #imagem_tela_inicial_3{
         content: url("../assents/imagens/imagens-tablet/imagem-tela-inicial-3_tablet.png");
     }
+
+    main button{
+        width: 30%;
+        height: 3em;
+     
+        background-color: #A12AB1;
+     
+        margin-top: 2%;
+        margin-left: auto;
+
+     }
+
+     .paragrafo-tela-inicial nav{
+        font-size: .75em;
+     }
 
 }
 

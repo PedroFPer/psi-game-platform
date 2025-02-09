@@ -19,14 +19,15 @@ body{
 header, footer {
     display: flex;
     align-items: center;
-    padding: 10px;
 
     background: radial-gradient(closest-side,#7D3686,#662C6E,#502356, #512357);
-
+    
 }
 
 .icone_menu_harbuger{
     display: none;
+    margin: auto;
+    padding-right: 50px;
 }
 
 footer{
@@ -102,8 +103,18 @@ footer{
     }
 
     .icone_menu_harbuger{
-        margin: auto; 
         display: flex;
+    }
+
+    .icone_menu_harbuger img{
+        content: url("../assents/imagens/imagens-mobile/menu_hamburger_mobile.png");
+    }
+
+    .menu_header_footer a {
+        width: 6em;
+        height: 2em;
+    
+        font-size: 0.7em;
     }
 }
 
@@ -121,9 +132,15 @@ footer{
         display: none;
     }
 
+    .menu_header_footer a {
+        width: 6em;
+        height: 2em;
+    
+        font-size: 1em;
+    }
+
     .icone_menu_harbuger{
-        margin: auto; 
-        display: flex;
+        display: flex;  
     }
 
 }
