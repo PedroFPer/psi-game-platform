@@ -59,7 +59,7 @@ footer{
     border-radius: 10%;
 
     width: 6em;
-    height: 2em;
+    height: 1.5em;
 
     background-color: #A12AB1;
 
@@ -89,7 +89,7 @@ footer{
     margin-left: auto; 
     display: flex;
     gap: 1em;
-    margin-right: 1%;
+    margin-right: 3%;
 }
 
 
@@ -117,7 +117,7 @@ footer{
 
     .menu_header_footer a {
         width: 6em;
-        height: 3em;
+        height: 2.5em;
         
         font-size: .7em;
     }
