@@ -41,25 +41,23 @@ footer{
 }
 
 
-.logo_site_header {
-    display: block; 
-}
-
 .menu_header_footer {
     display: flex;
     flex-grow: 1; 
     justify-content: space-between; 
     align-items: center;
+
+    height: auto;
 }
 
 .menu_header_footer a {
-    margin-left: 1em;
+    margin: 1em;
     padding-top: 0.5em;
 
     border-radius: 10%;
 
     width: 6em;
-    height: 1.5em;
+    height: 2em;
 
     background-color: #A12AB1;
 
@@ -119,7 +117,7 @@ footer{
         width: 5em;
         height: 2.5em;
         
-        font-size: .60em;
+        font-size: .6em;
     }
 }
 
