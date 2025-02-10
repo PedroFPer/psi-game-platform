@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilo_tela_cadastro.css">
+    <link rel="stylesheet" href="../estilos/estilo_geral.css">
+    <script src="../script/menuHamburger.js"></script>
+    <link rel="shortcut icon" href="../assents/imagens/imagens-desktop/logo-psi-desktop.png" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        
+        <nav class="menu_visivel">
+            <figure class="logo_site_header">
+                <img src="../assents/imagens/imagens-desktop/logo-psi-desktop.png" alt="logo_psi">
+            </figure>
+            
+            <nav class="menu_header_footer" >
+                    <div class="menu_btn_esquerda_header">
+                        <a href="#">Home</a>
+                        <a href="#">Agentes</a>
+                        <a href="#">Discord</a>
+                    </div>
+                    <div class="menu_btn_direita_header" >
+                        <a href="#">Cadastro</a>
+                        <a href="#">Login</a>
+                    </div>
+                    <div class="icone_menu_harbuger" onclick="clickMenuHambur()">
+                        <img  src="../assents/imagens/imagens-mobile/menu_hamburger_mobile.png" alt="icon_menu_harburger">
+                    </div>
+            </nav>
+        </nav>
+        
+        <nav class="menu_harbuger_mobile"  id="itens_menu_hambur" >
+                <ul >
+                    <li><button ><a href="#">Home</a></button></li>
+                    <li><button><a href="#">Agentes</a></button></li>
+                    <li><button><a href="#">Discord</a></button></li>
+                    <li><button><a href="#">Cadastro</a></button></li>
+                    <li><button><a href="#">Login</a></button></li>
+                </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <figure class="linha_personizada">
+                <img src="../assents/imagens/imagens-desktop/linha-personizada-simples.png" alt="linha-personizada_1">
+            </figure>
+            
+            <nav class="formulario_entrada">
+                <figure class="logo_psi_registro">
+                    <img src="../assents/imagens/imagens-desktop/PSI.png" alt="logo_psi">
+                </figure>
+
+                <form class="formul_cadastro" action="#">
+                    <h1>Cadastro</h1>
+                    <input type="user" value="Usuário">
+                    <input type="email" value="Email">
+                    <input type="text" value="Digite a nova senha" class="senha" onclick="ocultarSenha()">
+                    <input type="text" value="Confirme a sua senha" class="senha" onclick="ocultarSenha()">
+                    <button type="submit">
+                        <a href="#"> Criar conta</a>
+                    </button>
+                </form>
+                    
+            </nav>
+
+            <button>
+                <a href="#">Tem uma conta? Entre aqui!</a>
+            </button>
+
+            <figure class="linha_personizada">
+                <img src="../assents/imagens/imagens-desktop/linha-personizada-simples.png" alt="linha-personizada_2">
+            </figure>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <nav class="menu_header_footer">
+            <div class="menu_btn_esquerda_footer">
+                <a href="#">Sobre o Psi</a>
+                <a href="#">Contato</a>
+                <a href="#">Privacidade</a>
+            </div>
+
+            <div class="menu_btn_direita_footer">
+                <a href="#">Siga-nos</a>
+            </div>
+        </nav>
+        
+    </footer>
+    
+</body>
+</html>
