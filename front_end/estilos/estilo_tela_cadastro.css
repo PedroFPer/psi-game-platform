@@ -12,10 +12,12 @@ main{
     justify-content: center;
     align-items: center;
 
-    margin: 15% auto 15% auto;
+    margin: 25% auto 25% auto;
 
     flex-direction: row;
-    overflow: hidden; 
+    overflow: hidden;
+
+
 }
 
 section{
