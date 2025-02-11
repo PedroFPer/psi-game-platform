@@ -11,6 +11,9 @@
 
 html, body {
     overflow-x: hidden;
+
+    width: 100vw;
+    height: auto;
   }
   
 
@@ -31,7 +34,7 @@ header, footer {
 
 footer{
     background: radial-gradient(closest-side,#7D3686,#662C6E,#502356, #512357);
-    align-self:;
+    margin-bottom: auto;
 }
 
 

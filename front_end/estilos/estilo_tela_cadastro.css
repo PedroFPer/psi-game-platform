@@ -16,8 +16,6 @@ main{
 
     flex-direction: row;
     overflow: hidden; 
-
-    column-gap: 1;
 }
 
 section{
