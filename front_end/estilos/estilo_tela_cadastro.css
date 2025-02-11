@@ -12,7 +12,7 @@ main{
     justify-content: center;
     align-items: center;
 
-    margin: 5% auto 5% auto;
+    margin: 15% auto 15% auto;
 
     flex-direction: row;
     overflow: hidden; 
@@ -20,16 +20,10 @@ main{
 
 section{
     width: 100%;
+    
 }
 
-.logo_psi_registro{
-    width: 50%;
-    margin-left: auto;
-    padding-left: 2%;
-}
-
-
-.linha_personizada{
+.linha_personizada_desktop{
     width: 100%;
     height: 3em;
     margin: .5% 0% .5% 0%;
@@ -39,9 +33,46 @@ section{
     align-items: center;
 }
 
-.formulario_entrada{
+.linha_personizada_tablet{
+    width: 100%;
+    height: 3em;
+    margin: .5% 0% .5% 0%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner_principal{
     display: flex;
     flex-direction: row;
+
+    overflow: hidden;
+    flex-wrap: wrap; 
+}
+
+.conteiner_principal article{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_psi_registro{
+    width: 80%;
+    height: auto;
+    display: flex;
+}
+
+.logo_psi_registro img{
+    width: 100%;
+}
+
+.formul_cadastro figure{
+    display: flex;
+    object-fit: cover;
 }
 
 .formul_cadastro{
@@ -50,6 +81,10 @@ section{
     justify-content: center;
     flex-direction: column;
 
+    width: 50%;
+}
+
+.formul_cadastro form{
     width: 50%;
 }
 
@@ -66,13 +101,13 @@ section{
     border-radius: 10px;
 
     width: 90%;
-    height: 10%;
+    height: 15%;
 
     text-indent: .5em;
     font-size: 1em;
 }
 
-.formulario_entrada button{
+.formul_cadastro button{
     width: 85%;
    height: 4em;
    border-radius: 10px;
@@ -86,25 +121,259 @@ section{
    justify-content: center;
 }
 
-.formulario_entrada a{
+.formul_cadastro button:hover{
+    width: 87%;
+    height: 4.5em;
+
+    background-color: #37123b;
+}
+
+.formul_cadastro a{
     color: white;
     text-decoration: none;
     font-size: 1.5em;
 }
 
+#conteiner_link_login{
+    display: flex;
+    width: 50%;
+    align-content: center;
+    justify-content: center ;
+}
 
+#link_underline{
+    display: block;
+    text-decoration: underline;
+    color: white;
+    font-size: 1.3em;
+}
+
+#link_underline:hover{
+   font-size: 1.4em;
+}
 
 
 
 @media (max-width: 768px){
     main{
         flex-direction: column;
+        width: 90%;    
+    }
+
+    .conteiner_principal{
+        
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 2em;
+    }
+
+    .conteiner_principal article{
+        width: 100%;
+    }
+
+    .logo_psi_registro{
+        width: 20%;
+        display: flex;
+
+        content: url("../assents/imagens/imagens-tablet/psi_tela_cadastro_tablet.png");
+    }
+
+    .linha_personizada_desktop{
+        display: none;
+    }
+
+    .linha_personizada_tablet{
+        content: url("../assents/imagens/imagens-desktop/linha-personizada-simples.png");
+
+        width: 100%;
+        height: auto;
+        margin: .5% 0% .5% 0%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .formul_cadastro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .formul_cadastro h1{
+        font-size: 2.2em;
+        text-align: center;
+    
+        margin-bottom: 5%;
+        color: white;
+    }
+
+    .formul_cadastro form{
+        width: 100%;
+        padding-bottom: 10em;
+    }
+
+    .formul_cadastro input{
+        margin: 2% 0% 2% 0%;
+        border-radius: 10px;
+    
+        width: 90%;
+        height: 2.5em;
+    
+        text-indent: .5em;
+        font-size: 1em;
+    }
+
+    .formul_cadastro button{
+       height: 3em;
+        margin-top: 5%;
+    }
+    
+    .formul_cadastro button:hover{
+        width: 87%;
+        height: 3.5em;
+    
+        background-color: #37123b;
+    }
+
+    .formul_cadastro a{
+        font-size: 1.2em;
+    }
+
+    #conteiner_link_login{
+        display: flex;
+        width: 100%;
+        align-content: center;
+        justify-content: center ;
+
+        margin: 2em 0em .5em 0em;
+    }
+    
+    #link_underline{
+        display: block;
+        text-decoration: underline;
+        color: white;
+        font-size: 1.2em;
+    }
+    
+    #link_underline:hover{
+       font-size: 1.3em;
     }
 }
 
 @media (min-width: 768px) and (max-width: 992px){
     main{
         flex-direction: column;
+        width: 60%;
     }
 
+    .conteiner_principal{
+        
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 2em;
+    }
+
+    .logo_psi_registro{
+        width: 38%;
+        height: 0%;
+        display: flex;
+
+
+        content: url("../assents/imagens/imagens-tablet/psi_tela_cadastro_tablet.png");
+    }
+
+    .linha_personizada_desktop{
+        display: none;
+    }
+
+    .linha_personizada_tablet{
+        width: 100%;
+        height: 3em;
+        margin: .5% 0% .5% 0%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .formul_cadastro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .formul_cadastro h1{
+        font-size: 2.5em;
+        text-align: center;
+    
+        margin-bottom: 8%;
+        color: white;
+    }
+
+    .formul_cadastro form{
+        width: 100%;
+        padding-bottom: 10em;
+    }
+
+    .formul_cadastro input{
+        margin: 1% 0% 1% 0%;
+        border-radius: 10px;
+    
+        width: 90%;
+        height: 3em;
+    
+        text-indent: .5em;
+        font-size: 1em;
+    }
+
+    .formul_cadastro button{
+       height: 3em;
+        margin-top: 5%;
+    }
+    
+    .formul_cadastro button:hover{
+        width: 87%;
+        height: 3.5em;
+    
+        background-color: #37123b;
+    }
+
+    .formul_cadastro a{
+        font-size: 1.1em;
+    }
+
+    #conteiner_link_login{
+        display: flex;
+        width: 100%;
+        align-content: center;
+        justify-content: center ;
+
+        margin: 2em 0em .5em 0em;
+    }
+    
+    #link_underline{
+        display: block;
+        text-decoration: underline;
+        color: white;
+        font-size: 1.2em;
+    }
+    
+    #link_underline:hover{
+       font-size: 1.3em;
+    }
 }
