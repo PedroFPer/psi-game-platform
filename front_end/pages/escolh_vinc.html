@@ -57,43 +57,22 @@
             </figure>
 
             <article>
-                <p id="introducao_info_basi" >Crie um nome, descreva a aparência e faça uma história pro seu personagem demonstrando as características físicas,
-                        pessoais e mentais.</p>
+                <p id="introducao_info_basi" >O vínculo define a conexão do personagem com o sobrenatural e sua abordagem para enfrentá-lo, seja com dobras paranormais, como Ciganos e Psíquicos, ou habilidades de combate, como Militares e Policiais. Sua escolha é crucial, pois determina os atributos iniciais, traços, especialidades, equipamentos, dobras e invenções do personagem.</p>
             </article>
 
-            <form id="formul_infor_bas" action="#">
-                <li>
-                    <ul>
-                        <p>Nome do Personagem</p>
-                        <input  type="text">
-                    </ul>
 
-                    <ul>
-                        <p>Nome do Jogador</p>
-                        <input type="text">
-                    </ul>
-
-                    <ul>
-                        <p>Aparência</p>
-                        <textarea placeholder=""></textarea>
-                    </ul>
-
-                    <ul>
-                        <p>Personalidade</p>
-                        <textarea  placeholder=""></textarea>
-                    </ul>
-
-                    <ul>
-                        <p>Historia</p>
-                        <textarea placeholder=""></textarea>
-                    </ul>
-
-                    <ul>
-                        <p>Objetivo</p>
-                        <textarea placeholder=""></textarea>
-                    </ul>
-                </li>
-            </form>
+            <div id="escolha_vincul">
+                <form id="formul_infor_bas" action="#">
+                    <label for="vinculo_text_box">Vínculos</label>
+                    <select name="Vinculos" id="vinculo_text_box">
+                        <option value="estud">Estudioso</option>
+                        <option value="psiq">Psíquico</option>
+                        <option value="mediu">Médium</option>
+                        <option value="assom">Assombrado</option>
+                    </select>
+                </form>
+            </div>
+            
                  
             <nav id="naveg_cria_ficha">
                 <button class="button_padrao" id="button_direita">
@@ -102,7 +81,7 @@
                 </button>
 
                 <button class="button_padrao" id="button_esquerda">
-                    <a id="seta_esquerda" href="escolh_vinc.html">Vinculos</a>
+                    <a id="seta_esquerda" href="#">Vinculos</a>
                     <img src="../assents/imagens/imagens-desktop/arrow_right.png" alt="">
                 </button>
             </nav>
