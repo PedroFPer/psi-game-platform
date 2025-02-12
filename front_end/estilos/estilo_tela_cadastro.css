@@ -180,14 +180,14 @@ section{
     }
 
     .logo_psi_registro{
-        width: 15%;
+        width: 18%;
         display: flex;
 
         content: url("../assents/imagens/imagens-tablet/psi_tela_cadastro_tablet.png");
     }
 
     #main_login .logo_psi_registro{
-        width: 13%;
+        width: 18%;
         display: flex;
     }
 
