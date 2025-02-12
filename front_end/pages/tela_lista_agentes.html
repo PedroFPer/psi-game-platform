@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/estilo_tela_cadastro.css">
+    <link rel="stylesheet" href="../estilos/estilo_tela_lista_agente.css">
     <link rel="stylesheet" href="../estilos/estilo_geral.css">
     <script src="../script/menuHamburger.js"></script>
     <link rel="shortcut icon" href="../assents/imagens/imagens-desktop/logo-psi-desktop.png" type="image/x-icon">
-    <title>Cadastro</title>
+    <title>Lista de Agentes</title>
 </head>
 <body>
     <header>
@@ -48,41 +48,38 @@
 
     <main>
         <section>
+            <figure class="logo_psi_registro">
+                <img src="../assents/imagens/imagens-desktop/psi_logo_list.png" alt="logo_psi">
+            </figure>
+
             <figure class="linha_personizada_desktop">
                 <img src="../assents/imagens/imagens-desktop/linha-personizada-simples.png" alt="linha-personizada_1">
             </figure>
-            
-            <nav class="conteiner_principal">
-                <article>
-                    <figure class="logo_psi_registro">
-                        <img src="../assents/imagens/imagens-desktop/psi_tela_cadast.png" alt="logo_psi">
-                    </figure>
-
-                    <figure class="linha_personizada_tablet">
-                        <img src="../assents/imagens/imagens-desktop/linha-personizada-simples.png" alt="linha-personizada_1">
-                    </figure>
-                    
-                </article>
-
-                <form class="formul_cadastro" action="#">
-                    <h1>Cadastro</h1>
-                    <input type="user" value="Usuário">
-                    <input type="email" value="Email">
-                    <input type="text" value="Digite a nova senha" class="senha" onclick="ocultarSenha()">
-                    <input type="text" value="Confirme a sua senha" class="senha" onclick="ocultarSenha()">
-                    <button type="submit">
-                        <a href="#"> Criar conta</a>
-                    </button>
-                </form>
+           
+            <article id="conteiner_agentes">
+                <h1>Lista de Agentes</h1>
                 
-                <nav id="conteiner_link_login"> 
-                    <a id="link_underline" href="tela_login.html">Tem uma conta? Entre aqui!</a>
-                </nav>
-            </nav>
+                    <nav id="lista_agente">
+                        <div class="agente_perfil">
+                            <figure>
+                                <img src="../assents/imagens/imagens-desktop/agente_1.jpg" alt="imagem_agente">
+                            </figure>
+                            <div class="agente">
+                                <p>Leo</p>
+                                <p>Vinculo: Assombrado</p>
+                                <p>Ambição: Doutor</p>
+                                <button class="button_padrao">
+                                    <a href="#">Acessar Ficha  </a>
+                                </button>
+                            </div>
+                        </div>
 
-            <figure class="linha_personizada_desktop">
-                <img src="../assents/imagens/imagens-desktop/linha-personizada-simples.png" alt="linha-personizada_2">
-            </figure>
+                    </nav>
+                    
+                    <button class="button_padrao" id="button_criar_agent">
+                        <a href="#">Novo Agente</a>
+                    </button>
+            </article>
         </section>
 
     </main>

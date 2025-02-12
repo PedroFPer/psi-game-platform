@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: auto;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 70%;
+    height: auto;
+    
+    background: radial-gradient(closest-side,#7D3686,#662C6E,#502356, #512357);
+
+    margin: 5% auto;
+
+    padding: 2%;
+
+    border-radius: 10px;
+    
+    
+}
+
+
+
+.logo_psi_registro{
+    width: 30%;
+    height: auto;
+    display: flex;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_psi_registro img{
+    
+   object-fit: cover;
+}
+
+.linha_personizada_desktop{
+    width: 100%;
+    height: 3em;
+    margin: .1% 0% .1% 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha_personizada_tablet{
+    width: 100%;
+    height: 3em;
+    margin: .5% 0% .5% 0%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner_agentes{
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+article h1{
+    font-size: 2.2em;
+    text-align: center;
+    
+    margin-bottom: 3%;
+    color: white;
+}
+
+#lista_agente{
+    width: 98%;
+    height: auto;
+    min-height: 50em;
+
+    border: 2px solid black;
+
+    flex-wrap: wrap;
+
+    display: flex;
+
+    align-content: flex-start;
+
+    flex-direction: row;
+
+    overflow: hidden;
+
+    margin-bottom: 3%;
+}
+
+.agente_perfil{
+    width: 48%;
+    height: 10em;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: row;
+
+    margin: 1% 0% 1% 1%;
+    overflow: hidden;
+}
+
+#lista_agente figure{
+    width: 40%;
+    height: auto;
+}
+
+#lista_agente img{
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+.agente{
+    width: 60%;
+
+
+    background-color: #EDCA89;
+
+    text-indent: .8em;
+    padding-top: .6em;
+
+    font-size: 1.2em;
+}
+
+
+.button_padrao{
+   width: 49%;
+   height: 3.5em;
+   border-radius: 10px;
+
+   background-color: #A12AB1;
+
+   margin-top: 5%;
+   margin-left: auto;
+   margin-right: 2%;
+
+   display: flex;  
+   align-items: center;
+   justify-content: center;
+
+   border-color: #A12AB1;
+}
+
+
+.button_padrao a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.button_padrao:hover{
+   width: 50%;
+   height: 3.6em;
+}
+
+
+#button_criar_agent{
+    margin: auto;
+}
+
+
+@media (max-width: 768px){
+
+    main{
+        width: 100vw;   
+        min-height: 100vh;
+    }   
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 90%;
+        height: auto;
+        
+        background: radial-gradient(closest-side,#7D3686,#662C6E,#502356, #512357);
+    
+        margin: 5% auto;
+    
+        padding: 2%;
+    
+        border-radius: 10px;
+
+        overflow: hidden;
+    }
+
+    .logo_psi_registro{
+        width: 13%;
+        display: flex;
+
+        content: url("../assents/imagens/imagens-tablet/psi_tela_cadastro_tablet.png");
+    }
+
+
+    .linha_personizada_desktop{
+        display: flex;
+    }
+
+    #lista_agente{
+        width: 98%;
+        height: auto;
+        min-height: 0em;
+
+        border: 2px solid black;
+    
+        flex-wrap: wrap;
+    
+        display: flex;
+    
+        align-content: center;
+    
+        flex-direction: column;
+    
+        overflow: hidden;
+    }
+    
+
+    .agente_perfil{
+        width: 90%;
+        height: 10em;
+        border: 2px solid black;
+    
+        display: flex;
+        flex-direction: row;
+    
+        margin: 1% 0% 1% 1%;
+        overflow: hidden;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .agente{
+        width: 60%;
+        height: 100%;
+    
+        background-color: #EDCA89;
+    
+        text-indent: .8em;
+        padding-top: .6em;
+    
+        font-size: 1.2em;
+    }
+   
+    .agente img{
+        content: url("../assents/imagens/imagens-mobile/agente_1.jpg");
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+    main{
+        flex-direction: column;
+        width: 100%;
+        margin: 1% auto;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 90%;
+        height: auto;
+        
+        background: radial-gradient(closest-side,#7D3686,#662C6E,#502356, #512357);
+    
+        margin: 5% auto;
+    
+        padding: 2%;
+    
+        border-radius: 10px;
+    }
+
+
+    .logo_psi_registro{
+        width: 14%;
+        height: 0%;
+        display: flex;
+
+
+        content: url("../assents/imagens/imagens-tablet/psi_tela_cadastro_tablet.png");
+    }
+
+    .linha_personizada_desktop{
+        display: flex;
+    }
+
+    .button_padrao{
+        width: 50%;
+        height: 3.5em;
+        border-radius: 10px;
+     
+        background-color: #A12AB1;
+
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: 2%;
+
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+     
+        border-color: #A12AB1;
+     }
+
+
+     
+     .agente a{
+         color: white;
+         text-decoration: none;
+         
+     }
+     
+     .button_padrao:hover{
+        width: 51%;
+        height: 3.6em;
+     }
+
+ 
+}
