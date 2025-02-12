@@ -153,9 +153,7 @@ article h1{
 
    background-color: #A12AB1;
 
-   margin-top: 5%;
-   margin-left: auto;
-   margin-right: 2%;
+   margin: 8% 2% 2% auto;
 
    display: flex;  
    align-items: center;
@@ -202,7 +200,7 @@ article h1{
     
         margin: 5% auto;
     
-        padding: 2%;
+        padding: 5%;
     
         border-radius: 10px;
 
@@ -210,7 +208,7 @@ article h1{
     }
 
     .logo_psi_registro{
-        width: 13%;
+        width: 18%;
         display: flex;
 
         content: url("../assents/imagens/imagens-tablet/psi_tela_cadastro_tablet.png");
@@ -218,13 +216,20 @@ article h1{
 
 
     .linha_personizada_desktop{
-        display: flex;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .linha_personizada_desktop img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
     }
 
     #lista_agente{
         width: 98%;
         height: auto;
-        min-height: 0em;
+        min-height: 20em;
 
         border: 2px solid black;
     
@@ -277,11 +282,7 @@ article h1{
         height: 3em;
         border-radius: 10px;
 
-        margin-top: 8%;
-        margin-left: auto;
-        margin-right: 2%;
-
-
+        margin: 18% 2% 2% auto;
      }
 
 
@@ -340,9 +341,7 @@ article h1{
      
         background-color: #A12AB1;
 
-        margin-top: 5%;
-        margin-left: auto;
-        margin-right: 2%;
+        margin: 8% 2% 2% auto;
 
         display: flex;  
         align-items: center;
