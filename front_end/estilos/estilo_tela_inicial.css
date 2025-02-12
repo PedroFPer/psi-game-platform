@@ -26,16 +26,22 @@ main{
 }
 
 main figure{
-    
-    border-radius: 10%;
     overflow: hidden; 
 
     margin: auto;
 
     justify-content: center;
     align-items: center;
-    object-fit: cover;
     
+
+    border-radius: 10px;
+    
+}
+
+.imagem_paragrafo{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
 }
 
 main section{
@@ -76,16 +82,6 @@ main article{
 
 }
 
-.imagem_tela_inici{
-    width: 40%;
-    height: 30em;
-
-    margin: 0em .5em 0em .5em;
-
-    display: flex;
-    object-fit: cover;
-    
-}
 
  main button{
    width: 30%;
@@ -141,7 +137,6 @@ main a{
 
 
 
-
 @media (max-width: 768px){
     main{
         background: black url("../assents/imagens/imagens-mobile/background-pergam-mobile.png") no-repeat center center ; 
@@ -166,14 +161,19 @@ main a{
 
     #imagem_tela_inicial_1{
         content: url("../assents/imagens/imagens-mobile/imagem_tela_inicial_1_mobile.jpg");
+
     }
 
     #imagem_tela_inicial_2{
         content: url("../assents/imagens/imagens-mobile/imagem_tela_inicial_2_mobile.png");
+
+
     }
 
     #imagem_tela_inicial_3{
         content: url("../assents/imagens/imagens-mobile/imagem-tela-inicial-3_mobile.png");
+
+        
     }
 
     main button{
@@ -241,14 +241,20 @@ main a{
 
     #imagem_tela_inicial_1{
         content: url("../assents/imagens/imagens-tablet/imagem_tela_inicial_1_tablet.jpg");
+
+
     }
 
     #imagem_tela_inicial_2{
         content: url("../assents/imagens/imagens-tablet/imagem_tela_inicial_2_tablet.png");
+
+      
     }
 
     #imagem_tela_inicial_3{
         content: url("../assents/imagens/imagens-tablet/imagem-tela-inicial-3_tablet.png");
+
+     
     }
 
     main button{
