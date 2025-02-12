@@ -15,7 +15,7 @@ section{
     display: flex;
     flex-direction: column  ;
 
-    width: 70%;
+    width: 80%;
     height: auto;
     
     background: radial-gradient(closest-side,#7D3686,#662C6E,#502356, #512357);
