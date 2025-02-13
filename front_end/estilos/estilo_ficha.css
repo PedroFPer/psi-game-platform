@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+main{
+    width: 90vw;
+    min-height: 100vh;
+    margin: auto;
+
+    overflow: auto;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 100%;
+    height: auto;
+    
+    background: radial-gradient(closest-side,#7D3686,#662C6E,#502356, #512357);
+
+    border-radius: 10px;
+}
+
+
+#ficha_status{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    background-color: #EEC986;
+    
+}
+
+
+#atributo_perfil{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+
+    overflow: hidden;
+
+}
+
+#atributo{
+    width: 25%;
+    height: auto;
+}
+
+#atributo div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 3%;
+}
+
+#atributo p{
+    font-size: 1.5em;
+    color: #7e471a;
+    font-weight: bold;
+}
+
+#agente_perfil{
+    width: 50%;
+
+   margin: auto;
+
+}
+
+#agente_perfil p{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#agente_perfil figure{
+
+    text-align: center;
+}
+
+
+
+#habilidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+}
+
+
+#menu_ficha{
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    main{
+        width: 100vw;   
+        min-height: 100vh;
+    }   
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 90%;
+        height: auto;
+        
+        background: radial-gradient(closest-side,#7D3686,#662C6E,#502356, #512357);
+    
+        margin: 5% auto;
+    
+        padding: 2%;
+    
+        border-radius: 10px;
+
+        overflow: hidden;
+    }
+
+    .logo_psi_registro{
+        width: 13%;
+        display: flex;
+
+        content: url("../assents/imagens/imagens-tablet/psi_tela_cadastro_tablet.png");
+    }
+
+
+    .linha_personizada_desktop{
+        display: flex;
+    }
+
+
+    .button_padrao{
+        width: 8em;
+        height: 4em;
+        border-radius: 10px;
+     
+        margin-top: 3%;
+     
+        background-color: #A12AB1;
+     
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+     
+        border-color: #A12AB1;
+     }
+     
+     .button_padrao:hover{
+         width: 8.2em;
+         height: 4.1em;
+      }
+
+      .button_padrao a{
+        font-size: 1.2em;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+    main{
+        flex-direction: column;
+        width: 100%;
+        margin: 1% auto;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 90%;
+        height: auto;
+        
+        background: radial-gradient(closest-side,#7D3686,#662C6E,#502356, #512357);
+    
+        margin: 5% auto;
+    
+        padding: 2%;
+    
+        border-radius: 10px;
+    }
+
+
+    .logo_psi_registro{
+        width: 14%;
+        height: 0%;
+        display: flex;
+
+
+        content: url("../assents/imagens/imagens-tablet/psi_tela_cadastro_tablet.png");
+    }
+
+    .linha_personizada_desktop{
+        display: flex;
+    }
+
+    .button_padrao{
+        width: 50%;
+        height: 3.5em;
+        border-radius: 10px;
+     
+        background-color: #A12AB1;
+
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: 2%;
+
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+     
+        border-color: #A12AB1;
+     }
+
+
+     
+     .agente a{
+         color: white;
+         text-decoration: none;
+         
+     }
+     
+     .button_padrao:hover{
+        width: 51%;
+        height: 3.6em;
+     }
+
+
+     .button_padrao{
+        width: 8em;
+        height: 4em;
+        border-radius: 10px;
+     
+        margin-top: 3%;
+     
+        background-color: #A12AB1;
+     
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+     
+        border-color: #A12AB1;
+     }
+     
+     .button_padrao:hover{
+         width: 8.2em;
+         height: 4.1em;
+      }
+
+      .button_padrao a{
+        font-size: 1.1em;
+    }
+ 
+}
