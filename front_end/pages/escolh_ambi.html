@@ -61,22 +61,19 @@
             </figure>
 
             <article>
-                <p id="introducao_vincu">O vínculo define a conexão do personagem com o sobrenatural e sua abordagem
-                    para enfrentá-lo, seja com dobras paranormais, como Ciganos e Psíquicos, ou habilidades de combate,
-                    como Militares e Policiais. Sua escolha é crucial, pois determina os atributos iniciais, traços,
-                    especialidades, equipamentos, dobras e invenções do personagem.</p>
+                <p id="introducao_vincu">As Ambições representam como o personagem lida com o paranormal, seja fugindo, enfrentando ou buscando alívio mental. Sua escolha concede traços, especialidades, equipamentos e, possivelmente, uma dobra ou invenção.</p>
             </article>
 
 
             <div id="escolha_vincul">
                 <form id="formul_vincu" action="#">
-                    <label id="label_esco_vinc" for="vinculo_text_box">Vínculos</label>
+                    <label id="label_esco_vinc" for="vinculo_text_box">Ambição</label>
                     <select name="vinculos" id="escolha_vinculo" onchange="carregarConteudo()">
-                        <option value="default">Escolha um Vínculo...</option>
-                        <option value="estudioso">Estudioso</option>
-                        <option value="psiquico">Psíquico</option>
-                        <option value="medium">Médium</option>
-                        <option value="assombrado">Assombrado</option>
+                        <option value="default">Escolha uma Ambição...</option>
+                        <option value="ladino">Ladino</option>
+                        <option value="doutor">Doutor</option>
+                        <option value="adestrador">Adestrador</option>
+                        <option value="cozinheiro">Cozinheiro</option>
                     </select>
                 </form>
             </div>
@@ -89,17 +86,17 @@
             <nav id="naveg_cria_ficha">
                 <button class="button_padrao" id="button_direita">
                     <img src="../assents/imagens/imagens-desktop/arrow.png" alt="">
-                    <a id="seta_direita" href="escolh_infor_basic.html">info Bás</a>
+                    <a id="seta_direita" href="escolh_vinc.html ">Vinculo</a>
                 </button>
 
                 <button class="button_padrao" id="button_esquerda">
-                    <a id="seta_esquerda" href="escolh_ambi.html">Ambição</a>
+                    <a id="seta_esquerda" href="3">Finalizar Ficha</a>
                     <img src="../assents/imagens/imagens-desktop/arrow_right.png" alt="">
                 </button>
             </nav>
 
         </section>
-
+        
     </main>
 
     <footer>
@@ -124,21 +121,21 @@
             var conteudo = document.getElementById("conteudo");
 
             var dados = {
-                estudioso: "Não disponível",
-                psiquico: "Não disponível",
-                medium: "Não disponível",
-                assombrado: `
+                ladino: "Não disponível",
+                adestrador: "Não disponível",
+                cozinheiro: "Não disponível",
+                doutor: `
                 <figure id="assombrado_imagem">
-                    <img src="../assents/imagens/imagens-desktop/assombrado-geral.png" alt="assombrado-geral">
+                    <img src="../assents/imagens/imagens-desktop/doutor-exemplo.png" alt="doutor_exemplo">
                 </figure>
                 
                 <article>
                     <p>
-                        "Desde o começo das suas atividades investigando o Paranormal você sempre sentiu inveja dos outros, falando que recentemente descobriu o terror disso tudo, enquanto você convive com isso desde o início de sua vida."
+                        "Você se especializou na área da medicina, consegue atua muito bem para curar os outros, apesar de toda a pressão que recai sobre você. Sabendo cuidar dos outros com muita sabedoria e sabendo analisar DNA.’’
                     </p>
 
                     <h2>
-                        Traço: O Contrato
+                        Traço: Médico de Combate
                     </h2>
 
                     <figure class="linha_personizada_desktop">
@@ -146,7 +143,20 @@
                     </figure>
 
                     <p>
-                        Seu Espírito que o persegue sempre ajuda do jeito que ele achar melhor. Como uma assombração sua, ele tem habilidades e poderes que podem lhe ajudar em momentos difíceis, mas isso pode lhe prejudicar.
+                        Pelo perigo contaste de risco de morte, você aprendeu a ser rápido e eficaz nos tratamentos médicosdurante uma intriga.
+                    </p>
+
+                    <h2>
+                        Traço: Fabricante Natural
+                    </h2>
+
+                    <figure class="linha_personizada_desktop">
+                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                    </figure>
+
+                    <p>
+                        Com a disposição de ingredientes variados, você é capaz de criar porções variadas e a sua 
+                        escolha.                    
                     </p>
 
                     <h2>
@@ -158,7 +168,7 @@
                     </figure>
 
                     <p>
-                        Negociação + 1 Aleatório
+                        Medicina
                     </p>
 
                     <h2>
@@ -170,7 +180,7 @@
                     </figure>
 
                     <p>
-                        Foco paranormal que liga com seu espírito
+                        Maleta com kit médico
                     </p>
 
                     <h2>
@@ -182,7 +192,7 @@
                     </figure>
 
                     <p>
-                        Role 1 dobra paranormal com o efeito “Apaziguador”
+                        Nenhuma
                     </p>
 
                     <h2>
@@ -198,11 +208,7 @@
                     </p>
 
                     <figure class="img_habilidade-atributos">
-                        <img src="../assents/imagens/imagens-gerais/atributos.png" alt="atributos">
-                    </figure>
-
-                    <figure class="img_habilidade-atributos" >
-                        <img src="../assents/imagens/imagens-gerais/habilidades.png" alt="habilidades">
+                        <img src="../assents/imagens/imagens-gerais/atributo-2.png" alt="atributos">
                     </figure>
                 </article>
                     
