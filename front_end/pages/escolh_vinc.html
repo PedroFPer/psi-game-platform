@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/estilo_escolh_infor_basic.css">
     <link rel="stylesheet" href="../estilos/estilo_geral.css">
+    <link rel="stylesheet" href="../estilos/escolh_vinc.css">
     <script src="../script/menuHamburger.js"></script>
     <link rel="shortcut icon" href="../assents/imagens/imagens-desktop/logo-psi-desktop.png" type="image/x-icon">
     <title>Lista de Agentes</title>
 </head>
+
 <body>
     <header>
-        
+
         <nav class="menu_visivel">
             <figure class="logo_site_header">
                 <img src="../assents/imagens/imagens-desktop/logo-psi-desktop.png" alt="logo_psi">
             </figure>
-            
-            <nav class="menu_header_footer" >
-                    <div class="menu_btn_esquerda_header">
-                        <a href="file:///C:/Users/Pichau/Desktop/Programacao/Projetos/psi/index.html">Home</a>
-                        <a href="tela_lista_agentes.html">Agentes</a>
-                        <a href="#">Discord</a>
-                    </div>
-                    <div class="menu_btn_direita_header" >
-                        <a href="tela_cadastro.html">Cadastro</a>
-                        <a href="tela_login.html">Login</a>
-                    </div>
-                    <div class="icone_menu_harbuger" onclick="clickMenuHambur()">
-                        <img  src="../assents/imagens/imagens-mobile/menu_hamburger_mobile.png" alt="icon_menu_harburger">
-                    </div>
+
+            <nav class="menu_header_footer">
+                <div class="menu_btn_esquerda_header">
+                    <a href="file:///C:/Users/Pichau/Desktop/Programacao/Projetos/psi/index.html">Home</a>
+                    <a href="tela_lista_agentes.html">Agentes</a>
+                    <a href="#">Discord</a>
+                </div>
+                <div class="menu_btn_direita_header">
+                    <a href="tela_cadastro.html">Cadastro</a>
+                    <a href="tela_login.html">Login</a>
+                </div>
+                <div class="icone_menu_harbuger" onclick="clickMenuHambur()">
+                    <img src="../assents/imagens/imagens-mobile/menu_hamburger_mobile.png" alt="icon_menu_harburger">
+                </div>
             </nav>
         </nav>
-        
-        <nav class="menu_harbuger_mobile"  id="itens_menu_hambur" >
-                <ul >
-                    <li><button ><a href="file:///C:/Users/Pichau/Desktop/Programacao/Projetos/psi/index.html">Home</a></button></li>
-                    <li><button><a href="tela_lista_agentes.html">Agentes</a></button></li>
-                    <li><button><a href="#">Discord</a></button></li>
-                    <li><button><a href="tela_cadastro.html">Cadastro</a></button></li>
-                    <li><button><a href="tela_login.html">Login</a></button></li>
-                </ul>
+
+        <nav class="menu_harbuger_mobile" id="itens_menu_hambur">
+            <ul>
+                <li><button><a
+                            href="file:///C:/Users/Pichau/Desktop/Programacao/Projetos/psi/index.html">Home</a></button>
+                </li>
+                <li><button><a href="tela_lista_agentes.html">Agentes</a></button></li>
+                <li><button><a href="#">Discord</a></button></li>
+                <li><button><a href="tela_cadastro.html">Cadastro</a></button></li>
+                <li><button><a href="tela_login.html">Login</a></button></li>
+            </ul>
 
         </nav>
 
@@ -53,27 +57,111 @@
             </figure>
 
             <figure class="linha_personizada_desktop">
-                <img src="../assents/imagens/imagens-desktop/linha-personizada-simples.png" alt="linha-personizada_1">
+                <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
             </figure>
 
             <article>
-                <p id="introducao_info_basi" >O vínculo define a conexão do personagem com o sobrenatural e sua abordagem para enfrentá-lo, seja com dobras paranormais, como Ciganos e Psíquicos, ou habilidades de combate, como Militares e Policiais. Sua escolha é crucial, pois determina os atributos iniciais, traços, especialidades, equipamentos, dobras e invenções do personagem.</p>
+                <p id="introducao_vincu">O vínculo define a conexão do personagem com o sobrenatural e sua abordagem
+                    para enfrentá-lo, seja com dobras paranormais, como Ciganos e Psíquicos, ou habilidades de combate,
+                    como Militares e Policiais. Sua escolha é crucial, pois determina os atributos iniciais, traços,
+                    especialidades, equipamentos, dobras e invenções do personagem.</p>
             </article>
 
 
             <div id="escolha_vincul">
-                <form id="formul_infor_bas" action="#">
-                    <label for="vinculo_text_box">Vínculos</label>
-                    <select name="Vinculos" id="vinculo_text_box">
-                        <option value="estud">Estudioso</option>
-                        <option value="psiq">Psíquico</option>
-                        <option value="mediu">Médium</option>
-                        <option value="assom">Assombrado</option>
+                <form id="formul_vincu" action="#">
+                    <label id="label_esco_vinc" for="vinculo_text_box">Vínculos</label>
+                    <select name="vinculos" id="escolha_vinculo" onchange="carregarConteudo()">
+                        <option value="default">Escolha um Vínculo...</option>
+                        <option value="estudioso">Estudioso</option>
+                        <option value="psiquico">Psíquico</option>
+                        <option value="medium">Médium</option>
+                        <option value="assombrado">Assombrado</option>
                     </select>
                 </form>
             </div>
-            
-                 
+
+            <div id="conteudo">
+                <figure id="assombrado_imagem">
+                    <img src="../assents/imagens/imagens-desktop/assombrado-geral.png" alt="assombrado-geral">
+                </figure>
+                
+                <article>
+                    <p>
+                        "Desde o começo das suas atividades investigando o Paranormal você sempre sentiu inveja dos outros, falando que recentemente descobriu o terror disso tudo, enquanto você convive com isso desde o início de sua vida."
+                    </p>
+
+                    <h2>
+                        Traço: O Contrato
+                    </h2>
+
+                    <figure class="linha_personizada_desktop">
+                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                    </figure>
+
+                    <p>
+                        Seu Espírito que o persegue sempre ajuda do jeito que ele achar melhor. Como uma assombração sua, ele tem habilidades e poderes que podem lhe ajudar em momentos difíceis, mas isso pode lhe prejudicar.
+                    </p>
+
+                    <h2>
+                        Especialidades
+                    </h2>
+
+                    <figure class="linha_personizada_desktop">
+                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                    </figure>
+
+                    <p>
+                        Negociação + 1 Aleatório
+                    </p>
+
+                    <h2>
+                        Equipamento
+                    </h2>
+
+                    <figure class="linha_personizada_desktop">
+                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                    </figure>
+
+                    <p>
+                        Foco paranormal que liga com seu espírito
+                    </p>
+
+                    <h2>
+                        Dobras
+                    </h2>
+
+                    <figure class="linha_personizada_desktop">
+                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                    </figure>
+
+                    <p>
+                        Role 1 dobra paranormal com o efeito “Apaziguador”
+                    </p>
+
+                    <h2>
+                        Invenção
+                    </h2>
+
+                    <figure class="linha_personizada_desktop">
+                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                    </figure>
+
+                    <p>
+                        Nenhuma
+                    </p>
+
+                    <figure>
+                        <img src="../assents/imagens/imagens-gerais/atributos.png" alt="atributos">
+                    </figure>
+
+                    <figure>
+                        <img src="../assents/imagens/imagens-gerais/habilidades.png" alt="habilidades">
+                    </figure>
+                </article>
+            </div>
+
+
             <nav id="naveg_cria_ficha">
                 <button class="button_padrao" id="button_direita">
                     <img src="../assents/imagens/imagens-desktop/arrow.png" alt="">
@@ -103,8 +191,29 @@
                 <a href="#">Siga-nos</a>
             </div>
         </nav>
-        
+
     </footer>
-    
+
+    <!-- <script>
+        function carregarConteudo() {
+            var escolha = document.getElementById("escolha_vinculo").value;
+            var conteudo = document.getElementById("conteudo");
+
+            var dados = {
+                estudioso: "Não disponível",
+                psiquico: "Não disponível",
+                medium: "Não disponível",
+                assombrado: `
+                    
+                `
+            };
+
+            conteudo.innerHTML = dados[escolha] || "";
+        }
+    </script>
+ -->
+
+
 </body>
+
 </html>
