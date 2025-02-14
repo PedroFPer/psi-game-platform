@@ -74,7 +74,7 @@
 
                     <aside id="agente_perfil">
                         <p>Assombrado/Doutor</p>
-                        
+
                         <figure>
                             <img src="../assents/imagens/imagens-desktop/leo_agente.png" alt="assombrado-geral">
                         </figure>
@@ -137,28 +137,34 @@
                     <img src="../assents/imagens/imagens-desktop/moldura-chique.png" alt="">
                 </figure>
 
-                <article class="caixa_infor_horiz" id="caixa_maior">
-                    <img src="../assents/imagens/imagens-gerais/Caixa_info_horizontal.png" alt="Caixa_info_horiz">
-                    <textarea name="text_area_tra_espe" id="text_area_tra_espe"></textarea>
-                </article>
+                <nav id="menu_info_agente">
+                    <button onclick="carregarConteudo('inventario')">
+                        Inventario
+                    </button>
 
-                <nav id="conteine_empilha">
-                    <article class="caixa_infor_horiz">
-                        <img src="../assents/imagens/imagens-gerais/Caixa_info_horizontal.png" alt="Caixa_info_horiz">
-                        <textarea name="text_area_tra_espe" id="text_area_tra_espe"></textarea>
-                    </article>
-                    <article class="caixa_infor_horiz">
-                        <img src="../assents/imagens/imagens-gerais/Caixa_info_horizontal.png" alt="Caixa_info_horiz">
-                        <textarea name="text_area_tra_espe" id="text_area_tra_espe"></textarea>
-                    </article>
+                    <button onclick="carregarConteudo('tracosEspec')">
+                        Traços e Especialidades
+                    </button>
+
+                    <button onclick="carregarConteudo('dobras')">
+                        Dobras
+                    </button>
+
+                    <button onclick="carregarConteudo('invencoes')">
+                        Invenções
+                    </button>
+
+                    <button onclick="carregarConteudo('descricao')">
+                        Descrição
+                    </button>
                 </nav>
 
-                <article id="caixa_infor_ver">
-                    <img src="../assents/imagens/imagens-desktop/Caixa_info_vertical.png" alt="Caixa_info_vertical">
-                    <textarea name="text_area_tra_espe" id="text_area_tra_espe"></textarea>
-                </article>
-
-
+                <div id="conteudo">
+                    <div class="bloco_info">
+                        <h2>Objetivo</h2>
+                        <textarea name="objetivo_text_area" id=""></textarea>
+                    </div>
+                </div>
 
                 <figure>
                     <img src="../assents/imagens/imagens-desktop/moldura-chique.png" alt="">
@@ -167,6 +173,72 @@
 
             </nav>
         </section>
+
+        <script>
+            function carregarConteudo(escolha) {
+                var conteudo = document.getElementById("conteudo");
+
+                var dados = {
+                    tracosEspec:`
+                    <h2>
+                        Traço: O Contrato
+                    </h2>
+
+                    <figure class="linha_personizada_desktop">
+                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                    </figure>
+
+                    <p>
+                        Seu Espírito que o persegue sempre ajuda do jeito que ele achar melhor. Como uma assombração
+                        sua, ele tem habilidades e poderes que podem lhe ajudar em momentos difíceis, mas isso pode lhe
+                        prejudicar.
+                    </p>
+
+                    <h2>
+                        Traço: Médico de Combate
+                    </h2>
+
+                    <figure class="linha_personizada_desktop">
+                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                    </figure>
+
+                    <p>
+                        Pelo perigo contaste de risco de morte, você aprendeu a ser rápido e eficaz nos tratamentos
+                        médicosdurante uma intriga.
+                    </p>
+
+                    <h2>
+                        Traço: Fabricante Natural
+                    </h2>
+
+                    <figure class="linha_personizada_desktop">
+                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                    </figure>
+
+                    <p>
+                        Com a disposição de ingredientes variados, você é capaz de criar porções variadas e a sua
+                        escolha.
+                    </p>
+
+                    <h2>
+                        Especialidades
+                    </h2>
+
+                    <figure class="linha_personizada_desktop">
+                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                    </figure>
+
+
+                    <textarea name="especial_text_area" id="especial_text_area">Negociação, Medicina e +1</textarea>`
+
+                };
+
+                conteudo.innerHTML = dados[escolha] || "";
+            }
+        </script>
+
+
+
 
     </main>
 
