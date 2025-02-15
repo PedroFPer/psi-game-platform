@@ -115,31 +115,40 @@
 
                 <div id="ficha_info">
                     <nav id="ficha_info_menu">
-                        <button onclick="carregarConteudo('inventario')">
-                            Inventario
-                        </button>
-    
-                        <button onclick="carregarConteudo('tracosEspec')">
-                            Traços e Especialidades
-                        </button>
-    
-                        <button onclick="carregarConteudo('dobras')">
-                            Dobras
-                        </button>
-    
-                        <button onclick="carregarConteudo('invencoes')">
-                            Invenções
-                        </button>
-    
-                        <button onclick="carregarConteudo('descricao')">
-                            Descrição
-                        </button>
+                        <div id="menu_botao_desktop">
+                            <button onclick="carregarConteudo('inventario')">
+                                Inventario
+                            </button>
+                            <button onclick="carregarConteudo('tracosEspec')">
+                                Traços e Especialidades
+                            </button>
+                            <button onclick="carregarConteudo('dobras')">
+                                Dobras
+                            </button>
+                            <button onclick="carregarConteudo('invencoes')">
+                                Invenções
+                            </button>
+                            <button onclick="carregarConteudo('descricao')">
+                                Descrição
+                            </button>
+                        </div>
+
+                        <div id="menu_select">
+                            <select id="menu_opcoes" onchange="carregarConteudo(this.value)">
+                                <option value="inventario">Inventário</option>
+                                <option value="tracosEspec">Traços e Especialidades</option>
+                                <option value="dobras">Dobras</option>
+                                <option value="invencoes">Invenções</option>
+                                <option value="descricao">Descrição</option>
+                            </select>
+                        </div>
                     </nav>
 
                     <div id="conteudo">
                         
+
                     </div>
-    
+
                 </div>
             </article>
 
@@ -163,6 +172,12 @@
         </nav>
 
     </footer>
+
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            carregarConteudo('inventario'); // Define "Inventario" como padrão
+        });
+    </script> 
 
     <script>
         function carregarConteudo(escolha) {
@@ -211,7 +226,7 @@
                             <textarea name="especial_text_area" id="especial_text_area">Negociação, Medicina e +1</textarea>
                             </div>`
 
-                ,descricao:`
+                , descricao: `
                     <div id="descricao_conteudo">
                             <div class="bloco_info">
                                 <h2>Aparência</h2>
@@ -234,12 +249,71 @@
                             </div>
                         </div>
                 `
+                , dobras:
+                    `   <div id="lista_dobras">
+                            <div class="conteiner_dobra">
+                                <div class="dobra">
+                                    <p class="nome_dobra">
+                                        Coroa da Morte
+                                    </p>
+                                    <div class="rodape_dobra">
+                                        <p>
+                                            Alcance: 9 Metros
+                                        </p>
+                                        <p>
+                                            Efeito: Apaziguador
+                                        </p>
+                                    </div>
+                                    <div class="area_button">
+                                        <button onclick="clickDescricaoPoderzinho()">
+                                            Detalhes
+                                        </button>
+                                    </div>
+                                    <div class="descricao_oculta">
+                                        <p>Detalhes</p>
+                                        <textarea name="descricao_dobra"
+                                            id="descricao_dobra">Coroa da Morte evoca uma coroa espectral que acalma o alvo, suprimindo emoções intensas e reduzindo sua hostilidade, podendo até induzir um transe momentâneo.</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="area_button_cria">
+                            <button>Nova dobra</button>
+                        </div>
+
+                `
+
+                , invencoes:
+                    `<p>Nenhum Invenção encontrada</p>
+                    <div class="area_button_cria">
+                            <button>Nova dobra</button>
+                        </div>`
+
+                , inventario:
+                    ` <div id="inventario">
+                            <p>Inventario</p>
+                            <textarea name="inventario-text_box" id="inventario-text_box">Colar antigo da sua irmã e um kit de medicina</textarea>
+                        </div> `
             };
 
             conteudo.innerHTML = dados[escolha] || "";
         }
     </script>
 
+    <script>
+        function clickDescricaoPoderzinho() {
+            var descriOcult = document.querySelectorAll('.descricao_oculta');
+
+            descriOcult.forEach(function (element) {
+                if (element.style.display === "flex") {
+                    element.style.display = "none";
+                } else {
+                    element.style.display = "flex";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
