@@ -113,8 +113,33 @@
 
                 </div>
 
-                <div id="menu_dados">
+                <div id="ficha_info">
+                    <nav id="ficha_info_menu">
+                        <button onclick="carregarConteudo('inventario')">
+                            Inventario
+                        </button>
+    
+                        <button onclick="carregarConteudo('tracosEspec')">
+                            Traços e Especialidades
+                        </button>
+    
+                        <button onclick="carregarConteudo('dobras')">
+                            Dobras
+                        </button>
+    
+                        <button onclick="carregarConteudo('invencoes')">
+                            Invenções
+                        </button>
+    
+                        <button onclick="carregarConteudo('descricao')">
+                            Descrição
+                        </button>
+                    </nav>
 
+                    <div id="conteudo">
+                        
+                    </div>
+    
                 </div>
             </article>
 
@@ -138,6 +163,82 @@
         </nav>
 
     </footer>
+
+    <script>
+        function carregarConteudo(escolha) {
+            var conteudo = document.getElementById("conteudo");
+
+            var dados = {
+                tracosEspec: `
+                <div id="tracos_espec_conteudo">
+                            <h2>
+                                Traço: O Contrato
+                            </h2>
+                            <figure class="linha_personizada_desktop">
+                                <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                            </figure>
+                            <p>
+                                Seu Espírito que o persegue sempre ajuda do jeito que ele achar melhor. Como uma assombração
+                                sua, ele tem habilidades e poderes que podem lhe ajudar em momentos difíceis, mas isso pode lhe
+                                prejudicar.
+                            </p>
+                            <h2>
+                                Traço: Médico de Combate
+                            </h2>
+                            <figure class="linha_personizada_desktop">
+                                <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                            </figure>
+                            <p>
+                                Pelo perigo contaste de risco de morte, você aprendeu a ser rápido e eficaz nos tratamentos
+                                médicosdurante uma intriga.
+                            </p>
+                            <h2>
+                                Traço: Fabricante Natural
+                            </h2>
+                            <figure class="linha_personizada_desktop">
+                                <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                            </figure>
+                            <p>
+                                Com a disposição de ingredientes variados, você é capaz de criar porções variadas e a sua
+                                escolha.
+                            </p>
+                            <h2>
+                                Especialidades
+                            </h2>
+                            <figure class="linha_personizada_desktop">
+                                <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+                            </figure>
+                            <textarea name="especial_text_area" id="especial_text_area">Negociação, Medicina e +1</textarea>
+                            </div>`
+
+                ,descricao:`
+                    <div id="descricao_conteudo">
+                            <div class="bloco_info">
+                                <h2>Aparência</h2>
+                                <textarea name="objetivo_text_area" id="objetivo_text_area"> Leo é um jovem de, no máximo, 16 anos. Ele tem uma aparência esguia, pele clara e cabelos negros.
+                                </textarea>
+                            </div>
+                            <div class="bloco_info">
+                                <h2>Personalidade</h2>
+                                <textarea name="objetivo_text_area" id="objetivo_text_area">Leo possui uma personalidade introvertida e reservada, mas por trás de sua postura distante, é um garoto carinhoso e atencioso.
+                                </textarea>
+                            </div>
+                            <div class="bloco_info">
+                                <h2>Historia</h2>
+                                <textarea name="objetivo_text_area" id="objetivo_text_area">A irmã de Leo, Helena, faleceu devido a uma doença incurável. A partir desse momento, o forte laço entre eles permitiu que Helena permanecesse ao seu lado como um espírito.</textarea>
+                            </div>
+                            <div class="bloco_info">
+                                <h2>Objetivo</h2>
+                                <textarea name="objetivo_text_area" id="objetivo_text_area">Leo está em busca de conhecimento, determinado a se tornar um médico capaz de curar qualquer doença e encontrar uma maneira de libertar sua irmã.
+                                </textarea>
+                            </div>
+                        </div>
+                `
+            };
+
+            conteudo.innerHTML = dados[escolha] || "";
+        }
+    </script>
 
 </body>
 
