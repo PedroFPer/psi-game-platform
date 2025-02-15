@@ -52,194 +52,75 @@
 
     <main>
         <section>
-            <nav id="ficha_status">
-                <figure>
-                    <img src="../assents/imagens/imagens-desktop/moldura-chique.png" alt="">
-                </figure>
+            <figure class="moldura-chique">
+                <img src="../assents/imagens/imagens-desktop/moldura-chique.png" alt="moldura-chique">
+            </figure>
 
-                <article id="atributo_perfil">
-                    <aside id="atributo">
-                        <div>
-                            <p>Vida</p>
-                            <img src="../assents/imagens/imagens-desktop/vida-atributo.png" alt="vida_atributo">
-                            <p>6/6</p>
-                        </div>
-
-                        <div>
-                            <p>Esquiva</p>
-                            <img src="../assents/imagens/imagens-desktop/Esquiva.png" alt="esquiva_atributo">
-                            <p>6/6</p>
-                        </div>
-                    </aside>
-
-                    <aside id="agente_perfil">
-                        <p>Assombrado/Doutor</p>
-
-                        <figure>
-                            <img src="../assents/imagens/imagens-desktop/leo_agente.png" alt="assombrado-geral">
-                        </figure>
-
-                    </aside>
-
-
-                    <aside id="atributo">
-                        <div>
-                            <p>Sanidade</p>
-                            <img src="../assents/imagens/imagens-desktop/Sanidade.png" alt="sanidade_atributo">
-                            <p>16/16</p>
-                        </div>
-                        <div>
-                            <p>Espirito</p>
-                            <img src="../assents/imagens/imagens-desktop/Espirito.png" alt="Espirito">
-                            <p>6/6</p>
-                        </div>
-                    </aside>
-
-
-                </article>
-
-                <div id="nome_jogador">
-                    <p>
-                        Leo
-                    </p>
-                </div>
-
-                <div id="habilidades">
-                    <ul>
-                        <li>
-                            <p>Poder</p>
-                            <img src="../assents/imagens/imagens-desktop/Poder.png" alt="poder.imagem">
-                            <p>1</p>
-                        </li>
-
-                        <li>
-                            <p>Ideia</p>
-                            <img src="../assents/imagens/imagens-desktop/Ideia.png" alt="ideia.imagem">
-                            <p>0</p>
-                        </li>
-
-                        <li>
-                            <p>Saber</p>
-                            <img src="../assents/imagens/imagens-desktop/Saber.png" alt="saber.imagem">
-                            <p>1</p>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <figure>
-                    <img src="../assents/imagens/imagens-desktop/moldura-chique.png" alt="">
-                </figure>
-            </nav>
-
-            <nav id="menu_ficha">
-                <figure>
-                    <img src="../assents/imagens/imagens-desktop/moldura-chique.png" alt="">
-                </figure>
-
-                <nav id="menu_info_agente">
-                    <button onclick="carregarConteudo('inventario')">
-                        Inventario
-                    </button>
-
-                    <button onclick="carregarConteudo('tracosEspec')">
-                        Traços e Especialidades
-                    </button>
-
-                    <button onclick="carregarConteudo('dobras')">
-                        Dobras
-                    </button>
-
-                    <button onclick="carregarConteudo('invencoes')">
-                        Invenções
-                    </button>
-
-                    <button onclick="carregarConteudo('descricao')">
-                        Descrição
-                    </button>
-                </nav>
-
-                <div id="conteudo">
-                    <div class="bloco_info">
-                        <h2>Objetivo</h2>
-                        <textarea name="objetivo_text_area" id=""></textarea>
+            <article id="conteiner_ficha_geral">
+                <div id="ficha_geral">
+                    <div id="ficha_geral_topo">
+                        <aside id="conteiner_atributo">
+                            <div class="atributo">
+                                <p>Vida</p>
+                                <img src="../assents/imagens/imagens-desktop/vida-atributo.png" alt="vida_atributo">
+                                <p>6/6</p>
+                            </div>
+                            <div class="atributo">
+                                <p>Esquiva</p>
+                                <img src="../assents/imagens/imagens-desktop/Esquiva.png" alt="esquiva_atributo">
+                                <p>6/6</p>
+                            </div>
+                        </aside>
+                        <aside id="agente_perfil">
+                            <p>Assombrado/Doutor</p>
+                            <figure>
+                                <img src="../assents/imagens/imagens-desktop/leo_agente.png" alt="assombrado-geral">
+                            </figure>
+                            <p id="nome_jogador">Leo</p>
+                        </aside>
+                        <aside id="atributo">
+                            <div class="atributo">
+                                <p>Sanidade</p>
+                                <img src="../assents/imagens/imagens-desktop/Sanidade.png" alt="sanidade_atributo">
+                                <p>16/16</p>
+                            </div>
+                            <div class="atributo">
+                                <p>Espirito</p>
+                                <img src="../assents/imagens/imagens-desktop/Espirito.png" alt="Espirito">
+                                <p>6/6</p>
+                            </div>
+                        </aside>
                     </div>
+                    <div id="ficha_geral_base">
+                        <div class="habilidade">
+                            <p>Poder</p>
+                            <figure><img src="../assents/imagens/imagens-desktop/Poder.png" alt="poder.imagem"></figure>
+                            <p>1</p>
+                        </div>
+
+                        <div class="habilidade">
+                            <p>Ideia</p>
+                            <figure><img src="../assents/imagens/imagens-desktop/Ideia.png" alt="ideia.imagem"></figure>
+                            <p>0</p>
+                        </div>
+
+                        <div class="habilidade">
+                            <p>Saber</p>
+                            <figure><img src="../assents/imagens/imagens-desktop/Saber.png" alt="saber.imagem"></figure>
+                            <p>1</p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <figure>
-                    <img src="../assents/imagens/imagens-desktop/moldura-chique.png" alt="">
-                </figure>
-            </nav>
+                <div id="menu_dados">
 
-            </nav>
-        </section>
+                </div>
+            </article>
 
-        <script>
-            function carregarConteudo(escolha) {
-                var conteudo = document.getElementById("conteudo");
-
-                var dados = {
-                    tracosEspec:`
-                    <h2>
-                        Traço: O Contrato
-                    </h2>
-
-                    <figure class="linha_personizada_desktop">
-                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
-                    </figure>
-
-                    <p>
-                        Seu Espírito que o persegue sempre ajuda do jeito que ele achar melhor. Como uma assombração
-                        sua, ele tem habilidades e poderes que podem lhe ajudar em momentos difíceis, mas isso pode lhe
-                        prejudicar.
-                    </p>
-
-                    <h2>
-                        Traço: Médico de Combate
-                    </h2>
-
-                    <figure class="linha_personizada_desktop">
-                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
-                    </figure>
-
-                    <p>
-                        Pelo perigo contaste de risco de morte, você aprendeu a ser rápido e eficaz nos tratamentos
-                        médicosdurante uma intriga.
-                    </p>
-
-                    <h2>
-                        Traço: Fabricante Natural
-                    </h2>
-
-                    <figure class="linha_personizada_desktop">
-                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
-                    </figure>
-
-                    <p>
-                        Com a disposição de ingredientes variados, você é capaz de criar porções variadas e a sua
-                        escolha.
-                    </p>
-
-                    <h2>
-                        Especialidades
-                    </h2>
-
-                    <figure class="linha_personizada_desktop">
-                        <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
-                    </figure>
-
-
-                    <textarea name="especial_text_area" id="especial_text_area">Negociação, Medicina e +1</textarea>`
-
-                };
-
-                conteudo.innerHTML = dados[escolha] || "";
-            }
-        </script>
-
-
-
-
+            <figure class="moldura-chique">
+                <img src="../assents/imagens/imagens-desktop/moldura-chique.png" alt="moldura-chique">
+            </figure>
     </main>
 
     <footer>
