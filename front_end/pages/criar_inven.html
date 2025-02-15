@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilo_cria_podezinho.css">
+    <link rel="stylesheet" href="../estilos/estilo_geral.css">
+    <script src="../script/menuHamburger.js"></script>
+    <link rel="shortcut icon" href="../assents/imagens/imagens-desktop/logo-psi-desktop.png" type="image/x-icon">
+    <title>Lista de Agentes</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="menu_visivel">
+            <figure class="logo_site_header">
+                <img src="../assents/imagens/imagens-desktop/logo-psi-desktop.png" alt="logo_psi">
+            </figure>
+
+            <nav class="menu_header_footer">
+                <div class="menu_btn_esquerda_header">
+                    <a href="file:///C:/Users/Pichau/Desktop/Programacao/Projetos/psi/index.html">Home</a>
+                    <a href="tela_lista_agentes.html">Agentes</a>
+                    <a href="#">Discord</a>
+                </div>
+                <div class="menu_btn_direita_header">
+                    <a href="tela_cadastro.html">Cadastro</a>
+                    <a href="tela_login.html">Login</a>
+                </div>
+                <div class="icone_menu_harbuger" onclick="clickMenuHambur()">
+                    <img src="../assents/imagens/imagens-mobile/menu_hamburger_mobile.png" alt="icon_menu_harburger">
+                </div>
+            </nav>
+        </nav>
+
+        <nav class="menu_harbuger_mobile" id="itens_menu_hambur">
+            <ul>
+                <li><button><a
+                            href="file:///C:/Users/Pichau/Desktop/Programacao/Projetos/psi/index.html">Home</a></button>
+                </li>
+                <li><button><a href="tela_lista_agentes.html">Agentes</a></button></li>
+                <li><button><a href="#">Discord</a></button></li>
+                <li><button><a href="tela_cadastro.html">Cadastro</a></button></li>
+                <li><button><a href="tela_login.html">Login</a></button></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <figure class="logo_psi_registro">
+                <img src="../assents/imagens/imagens-desktop/psi_logo_list.png" alt="logo_psi">
+            </figure>
+
+            <figure class="linha_personizada_desktop">
+                <img src="../assents/imagens/imagens-gerais/linha-personizada.png" alt="linha-personizada">
+            </figure>
+
+            <article>
+                <p id="introducao_info_basi">Invenções ajudam os investigadores contra ameaças paranormais. O mestre define seus efeitos, durabilidade e custo. Se destruídas, podem ser recriadas com a fórmula ou compradas. Usá-las sem acoplamento exige um teste de Poder ou Saber. Novas fórmulas podem ser desenvolvidas com tempo e dinheiro do RPG.</p>
+            </article>
+
+            <form id="formul_infor_bas" action="#">
+                <li>
+                    <ul>
+                        <p>Nome da invenção</p>
+                        <input type="text">
+                    </ul>
+
+                    <ul>
+                        <p>Alcance</p>
+                        <input type="text">
+                    </ul>
+
+                    <ul>
+                        <p>Efeito</p>
+                        <select id="efeitos">
+                            <option value="telecinético">Transmissor</option>
+                            <option value="apaziguador">Servo</option>
+                            <option value="blindado">Aprisionador</option>
+                            <option value="esmagador">Atraente</option>
+                        </select>
+
+                    </ul>
+
+                    <ul>
+                        <p>Descrição</p>
+                        <textarea placeholder=""></textarea>
+                    </ul>
+                    </ul>
+                </li>
+            </form>
+
+            <div id="button_criar">
+                <button class="button_padrao"><a href="ficha_exemplo.html">Criar Invenção</a></button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <nav class="menu_header_footer">
+            <div class="menu_btn_esquerda_footer">
+                <a href="#">Sobre o Psi</a>
+                <a href="#">Contato</a>
+                <a href="#">Privacidade</a>
+            </div>
+
+            <div class="menu_btn_direita_footer">
+                <a href="#">Siga-nos</a>
+            </div>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
